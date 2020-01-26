@@ -10,4 +10,9 @@ class SubtractionOperationConfiguration {
     SubtractionOperation subtractionOperation() {
         return new SubtractionOperation();
     }
+    @Bean
+    DivisionOperation divisionOperation(){
+        return new DivisionOperation("nie wolno dzielic przez zero");
+    }
+
 }
